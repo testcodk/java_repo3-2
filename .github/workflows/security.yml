@@ -18,7 +18,7 @@ jobs:
       - name: test
         run: |
           echo ${{ steps.dependabot-metadata.outputs.dependency-names }}
-          echo ${{ github.action_repository }}
+          echo ${{ GITHUB_ACTION_REPOSITORY }}
           echo ${{ github.actor	}}
           echo ${{ steps.dependabot-metadata.outputs.dependency-type }}
           echo ${{ steps.dependabot-metadata.outputs.update-type }}
