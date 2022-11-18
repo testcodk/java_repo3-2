@@ -31,5 +31,5 @@ jobs:
           echo ${{ steps.dependabot-metadata.outputs.alert-state }}
           echo ${{ steps.dependabot-metadata.outputs.ghsa-id }}
           echo ${{ github.event_name }}
-
+          echo ${{ github.event.pull_request.html_url }}
         shell: bash
