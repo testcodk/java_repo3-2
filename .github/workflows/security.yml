@@ -27,8 +27,9 @@ jobs:
            "project":{
            "key":"PGS"
            },
-           "summary":"Dependabot-summary-test",
-           "description":"Dependabot description",
+           "summary":"$GITHUB_ACTOR alert from $GITHUB_REPOSITORY",
+           "description":"This is a dependabot alert on ${{ steps.dependabot-metadata.outputs.dependency-names }} ",
+           "Assignee":"Keerthana Gongala",
            "issuetype":{
            "name":"Incident"
            },
